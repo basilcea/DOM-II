@@ -37,7 +37,7 @@ const fullhead =document.querySelector('.main-navigation')
 window.onscroll =()=>{
     fullhead.style.backgroundColor ='gainsboro';
     fullhead.style.color='teal';
-    navLinks.forEach(link => link.style.color ='teal')
+    navLinks.forEach(link => link.style.color ='black')
     if(window.pageYOffset=== 0){
         fullhead.style ='';
         navLinks.forEach(link => link.style.color ='')
@@ -57,3 +57,15 @@ lastImage.onblur =()=>{
     lastImage.src='../img/destination.jpg';
     lastImage.style='';
 }
+let images = document.getElementsByClassName('img-content')
+const imageArray = [...images]
+imageArray.forEach(imageDiv=>imageDiv.children.resize =()=>{
+    console.log('you resized the image')
+})
+let signup = document.querySelectorAll('.btn')
+signup.forEach((signupButton,index) => signupButton.ondblclick = ()=>{
+ const h4 = document.querySelectorAll('.destination')[index].querySelector('h4')
+ console.log(h4)
+ h4.style.fontFamily='Arial';
+ h4.style.color= 'green';
+})

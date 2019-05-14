@@ -40,10 +40,10 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 	* [ ] `drag / drop` - drag and drop pictures
 	* [x] `load` - header image
 	* [x] `focus`- bottom image
-	* [ ] `resize`- pictures
-	* [X] `scroll`- make header transparent
+	* [] `resize`- pictures
+	* [X] `scroll`- make header different on scroll 
 	* [ ] `select`- highlight text
-	* [ ] `dblclick`- buttons
+	* [x] `dblclick`- buttons
 
 Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
 
