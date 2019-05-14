@@ -33,6 +33,16 @@ window.onload =() =>{
     headerImage.style.animationName ='moveHeader';
     headerImage.style.animationDuration='5s';
 }
+const fullhead =document.querySelector('.main-navigation')
+window.onscroll =()=>{
+    fullhead.style.backgroundColor ='gainsboro';
+    fullhead.style.color='teal';
+    navLinks.forEach(link => link.style.color ='teal')
+    if(window.pageYOffset=== 0){
+        fullhead.style ='';
+        navLinks.forEach(link => link.style.color ='')
+    }
+}
 let lastSection = document.getElementsByClassName('content-destination')[0]
 let lastImage =lastSection.querySelector('img')
 lastImage.setAttribute('tabindex',0);
