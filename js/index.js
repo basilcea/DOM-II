@@ -61,3 +61,7 @@ signup.forEach((signupButton,index) => signupButton.ondblclick = ()=>{
 window.onresize =()=>{
    console.log('You have resized window')
 }
+const text = document.querySelectorAll('p')
+text.forEach(textValue => textValue.oncopy =() =>{
+    alert(`You want to copy this below text \n ${textValue.textContent}`)
+})
