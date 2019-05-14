@@ -12,21 +12,10 @@ navLinks.forEach(link => link.onmouseover = ()=>{
     link.style.padding = '0.8rem';
     link.style.boxShadow ='0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)'
 })
+navLinks.forEach(link => link.onmouseout = ()=>{
+    link.style='';
+})
 
-// const nav = document.querySelector('nav');
-//  nav.style.outline = '1px solid blue'
-// const navClass = document.getElementsByClassName('.nav')[0]
-// nav.onkeydown = () =>{
-    // navClass.style.width = '600px';
-    // let searchform = document.createElement('form');
-    // let input = document.createElement('input');
-    // input.setAttribute('type','search');
-    // input.placeholder ='Search';
-    //  searchform.appendChild(input)
-    //  nav.prepend(searchform)
-
-// }
-// console.log(nav)
 let header = document.getElementsByClassName('intro')[0]
 let headerImage = header.querySelector('img')
 window.onload =() =>{
@@ -57,10 +46,10 @@ lastImage.onblur =()=>{
     lastImage.src='../img/destination.jpg';
     lastImage.style='';
 }
-let images = document.getElementsByClassName('img-content')
-const imageArray = [...images]
-imageArray.forEach(imageDiv=>imageDiv.children.resize =()=>{
-    console.log('you resized the image')
+let images = document.querySelectorAll('img')
+
+images.forEach(imageDiv=>imageDiv.ondrag =()=>{
+    imageDiv.style.opacity ='0'
 })
 let signup = document.querySelectorAll('.btn')
 signup.forEach((signupButton,index) => signupButton.ondblclick = ()=>{
@@ -69,3 +58,6 @@ signup.forEach((signupButton,index) => signupButton.ondblclick = ()=>{
  h4.style.fontFamily='Arial';
  h4.style.color= 'green';
 })
+window.onresize =()=>{
+   console.log('You have resized window')
+}
