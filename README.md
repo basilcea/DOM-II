@@ -39,7 +39,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 	* [ ] `wheel`- transform pictures
 	* [ ] `drag / drop` - drag and drop pictures
 	* [x] `load` - header image
-	* [ ] `focus`- bottom image
+	* [x] `focus`- bottom image
 	* [ ] `resize`- pictures
 	* [ ] `scroll`- make header transparent
 	* [ ] `select`- highlight text
